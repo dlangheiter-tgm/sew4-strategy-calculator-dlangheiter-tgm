@@ -1,5 +1,6 @@
 package strategy.calculator;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Calculator {
@@ -8,7 +9,9 @@ public class Calculator {
     private Double modifier;
     private Calculation calculation;
 
-    public Calculator() {}
+    public Calculator() {
+        this.values = new ArrayList<>();
+    }
 
     public void addValue(Double value) {
         this.values.add(value);
@@ -30,8 +33,13 @@ public class Calculator {
         this.calculation = calculation;
     }
 
-    public String toString() {
-        return "This is str";
-    }
 
+    @Override
+    public String toString() {
+        return "Calculator{" +
+                "values=" + this.values +
+                ", modifier=" + this.modifier +
+                ", calculation=" + this.calculation +
+                '}';
+    }
 }
