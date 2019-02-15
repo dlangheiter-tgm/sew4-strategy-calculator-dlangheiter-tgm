@@ -21,8 +21,8 @@ public class Calculator {
         this.modifier = modifier;
     }
 
-    public void removeValue(Double value) {
-        this.values.remove(value);
+    public boolean removeValue(Double value) {
+        return this.values.remove(value);
     }
 
     public List<Double> processCalculation() {

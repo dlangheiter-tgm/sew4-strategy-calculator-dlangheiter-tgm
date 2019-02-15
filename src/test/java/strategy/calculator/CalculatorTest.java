@@ -55,14 +55,20 @@ public class CalculatorTest {
     }
 
     @Test
-    public void removeValue() {
+    public void removeNonExistingValue() {
+        assertFalse(calculator.removeValue(42.0));
+    }
+
+    @Test(expected = NullPointerException.class)
+    public void processCalculationCallNotInitialized() {
+        calculator.processCalculation();
     }
 
     @Test
-    public void processCalculation() {
+    public void setAdditionCalculation() {
+        calculator.setCalculation(new Addition());
     }
 
-    @Test
-    public void setCalculation() {
-    }
+
+
 }
