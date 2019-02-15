@@ -3,7 +3,7 @@ package strategy.calculator;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import strategy.calculator.strategies.Addition;
+import strategy.calculator.calculations.Addition;
 
 import java.util.ArrayList;
 import java.util.List;
