@@ -5,7 +5,7 @@ import strategy.calculator.Calculation;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class Substraction implements Calculation {
+public class Subtraction implements Calculation {
 
     @Override
     public List<Double> processCalculation(List<Double> values, double modifier) {
