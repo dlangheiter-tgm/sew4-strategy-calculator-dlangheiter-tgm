@@ -1,8 +1,9 @@
-package strategy.calculator;
+package strategy.calculator.calculations;
 
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import strategy.calculator.Calculation;
 import strategy.calculator.calculations.Addition;
 
 import java.util.ArrayList;
@@ -12,7 +13,7 @@ import static org.junit.Assert.*;
 
 public class AdditionTest {
 
-    Calculation calculation;
+    private Calculation calculation;
 
     @Before
     public void setUp() throws Exception {

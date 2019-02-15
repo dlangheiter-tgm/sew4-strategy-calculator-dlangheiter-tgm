@@ -10,13 +10,13 @@ import java.util.List;
 
 import static org.junit.Assert.*;
 
-public class SubtractionTest {
+public class DivisionTest {
 
     private Calculation calculation;
 
     @Before
     public void setUp() throws Exception {
-        this.calculation = new Subtraction();
+        this.calculation = new Division();
     }
 
     @After
@@ -33,11 +33,12 @@ public class SubtractionTest {
 
         List<Double> testList = new ArrayList<>();
         for(Double d : inputList) {
-            testList.add(d - modifier);
+            testList.add(d / modifier);
         }
 
         List<Double> gotList = calculation.processCalculation(inputList,modifier);
 
         assertEquals(testList, gotList);
     }
+
 }
