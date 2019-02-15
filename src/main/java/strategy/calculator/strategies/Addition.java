@@ -1,17 +1,16 @@
-package strategy.calculator;
+package strategy.calculator.strategies;
+
+import strategy.calculator.Calculation;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Addition implements Calculation {
 
     @Override
     public List<Double> processCalculation(List<Double> values, double modifier) {
-        List<Double> retList = new ArrayList<>();
-        for(Double value : values) {
-            retList.add(value + modifier);
-        }
-        return retList;
+        return values.stream().map(orig -> orig + modifier).collect(Collectors.toList());
     }
 
 }
