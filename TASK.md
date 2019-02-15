@@ -23,12 +23,12 @@ Es soll bei der Umsetzung das Strategy-Pattern zur Anwendung kommen. Dieses kann
 ## Bewertung
 Gruppengrösse: 1 Person
 ### Grundanforderungen **überwiegend erfüllt**
-- [ ] Strategy-Interface für das Verhalten definieren
-- [ ] Methode ``List processCalculations()`` übernehmen
-- [ ] Calculator mit dem Verhalten "ausstatten"
+- [x] Strategy-Interface für das Verhalten definieren
+- [x] Methode ``List processCalculations()`` übernehmen
+- [x] Calculator mit dem Verhalten "ausstatten"
 ### Grundanforderungen **zur Gänze erfüllt**
-- [ ] Verhaltensimplementierung in den konkreten Klassen (entsprechend den mathematischen Funktionen)
-- [ ] richtige Verwendung des Modifiers
+- [x] Verhaltensimplementierung in den konkreten Klassen (entsprechend den mathematischen Funktionen)
+- [x] richtige Verwendung des Modifiers
 - [ ] Implementierung von vier Testklassen
 
 ## Quellen
